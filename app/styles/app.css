@@ -18,3 +18,14 @@
   color: black;
   text-shadow: 2px 2px #00FFFF;
 }
+
+.answer {
+  background-image: url("http://downloadicons.net/sites/default/files/blue-chat-bubble-icon-65893.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  text-shadow: 1px;
+  text-align: center;
+}

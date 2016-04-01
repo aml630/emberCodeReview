@@ -5,7 +5,7 @@
 <h2>Question: {{model.question}}</h2>
 </div>
 <h2>By: {{model.author}}</h2>
-<li>Date Posted: {{model.date}}</li>
+<h3>Date Posted: {{model.date}}</h3>
 
 
 
@@ -13,7 +13,9 @@
 <hr />
 
 {{#each model.answers as |answer|}}
+<div class = "answer">
 {{answer.answer}}
+</div>
 {{answer.author}}
 <button {{action 'deleteAnswer' answer}}>Delete</button>
 {{/each}}

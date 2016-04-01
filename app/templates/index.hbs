@@ -1,3 +1,7 @@
+<!-- Why cant i collect and save without a component in one function? -->
+
+
+
 <h1>All the question our site has to offer</h1>
 <hr />
 
@@ -6,7 +10,7 @@
 {{#link-to 'question' question.id}}<p>Question: {{question.question}}</p>{{/link-to}}
 </div>
 <h2>By: {{question.author}}</h2>
-<p>Date Posted: {{question.date}}</p>
+<h3>Date Posted: {{question.date}}</h3>
 <p>Update Your Questions: {{update-question question=question updateQuestion="updateQuestion"}} </p>
 
 <button class = "btn btn-danger" {{action 'deleteQuestion' question}}>Delete Question</button>
