@@ -1,13 +1,11 @@
-<h1>Im the main section</h1>
-<p>yay!</p>
 
-<!-- {{#each model as |question|}}
-{{question.author}}
-{{question.content}}
-{{/each}} -->
 
-<form >
-  {{input value=question id = "question" placeholder="Whats your question?"}}
-  {{input value=author id = "author" placeholder="Whats your name?"}}
-  <button {{action 'savePost'}}>Save</button>
-</form>
+{{#each model as |question|}}
+<li>{{question.question}}</li>
+<li>{{question.author}}</li>
+<hr />
+
+{{/each}}
+<hr />
+
+{{new-question savePost='savePost'}}

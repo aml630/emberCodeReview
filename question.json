@@ -1,0 +1,8 @@
+{ "questions": [{
+    "question": "why is the sky blue?",
+    "author": "Alex"
+  }, {
+      "question": "why is the sky green?",
+      "author": "Bob"
+    }]
+}
