@@ -1,0 +1,22 @@
+<div class = "container">
+  <div class="jumbotron">
+    <h1>Ember Quora</h1>
+    <p>Ask and answer questions! Spread the knowledge!</p>
+  </div>
+  <div class = "col-sm-8">
+{{outlet}}
+</div>
+
+<div class = "col-sm-4 sidebar">
+<h1>Im a sidebar</h1>
+{{#link-to 'about'}}About{{/link-to}}
+
+</div>
+
+
+
+<footer>
+
+{{#link-to 'index'}}Home{{/link-to}}
+</footer>
+</div>
