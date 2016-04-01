@@ -11,7 +11,6 @@
 
 {{#each model.answers as |answer|}}
 {{answer.answer}}
-<hr />
 {{answer.author}}
-
+<button {{action 'deleteAnswer' answer}}>Delete</button>
 {{/each}}

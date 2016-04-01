@@ -4,10 +4,12 @@
 {{#link-to 'question' question.id}}<li>Question: {{question.question}}</li>{{/link-to}}
 <li>Author: {{question.author}}</li>
 <li>Date Posted: {{question.date}}</li>
+<p>Update Your Questions: {{update-question question=question updateQuestion="updateQuestion"}} </p>
 
-<hr />
+<button {{action 'deleteQuestion' question}}>Delete Question</button>
+<p>//////////////////////////////////////////</p>
 
 {{/each}}
 <hr />
 
-{{new-question savePost='savePost'}}
+<p>Add A New Question: {{new-question savePost='savePost'}} </p>
