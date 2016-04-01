@@ -6,9 +6,12 @@
 
 
 
-{{new-answer saveAnswer = 'saveAnswer'}}
+{{new-answer question=model saveAnswer = 'saveAnswer'}}
 <hr />
 
 {{#each model.answers as |answer|}}
 {{answer.answer}}
+<hr />
+{{answer.author}}
+
 {{/each}}
