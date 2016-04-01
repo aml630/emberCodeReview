@@ -1,5 +1,6 @@
 <form >
-  {{input value=answer id="answer" placeholder = "Answer IT!"}}
-  {{input value=author id="author" placeholder = "my name is this"}}
+  {{textarea rows = "4" cols = "50" value=answer id="answer" placeholder = "Help Answer This Question!"}}
+  <br />
+  {{input value=author id="author" placeholder = "Your Name Here"}}
   <button {{action 'saveAnswer'}}>Save</button>
 </form>

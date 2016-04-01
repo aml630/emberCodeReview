@@ -1,6 +1,7 @@
 
 <form >
-  {{input value=question id="question" placeholder = "question"}}
-  {{input value=author id="author" placeholder = "author"}}
+  {{textarea rows = "4" cols = "50" value=question id="question" placeholder = "Whats Your Question?  Enter It Here!!"}}
+  <br />
+  {{input value=author id="author" placeholder = "Got A Name?"}}
   <button {{action 'savePost'}}>Save</button>
 </form>

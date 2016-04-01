@@ -2,10 +2,10 @@
 <form >
   {{input value=updateQuestion id="updateQuestion" placeholder = "Update Your Question"}}
   {{input value=updateAuthor id="updateAuthor" placeholder = "Update Your Author"}}
-  <button {{action 'updateQuestion' question}}>Save</button>
-  <button {{action 'hideUpdate'}}>Hide</button>
+  <button class = "btn btn-success"{{action 'updateQuestion' question}}>Save</button>
+  <button class = "btn btn-info"{{action 'hideUpdate'}}>Hide</button>
 </form>
 {{else}}
-<button {{action 'showUpdate'}}>Update Question</button>
+<button class = "btn btn-info"{{action 'showUpdate'}}>Update Question</button>
 
 {{/if}}

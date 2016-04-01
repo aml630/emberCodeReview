@@ -1,0 +1,20 @@
+.question {
+  background-image: url("http://www.free-icons-download.net/images/chat-bubble-icon-43779.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  text-shadow: 1px;
+  text-align: center;
+}
+
+.question a {
+  color: black;
+  text-shadow: 2px 2px #00FFFF;
+}
+
+.question h2 {
+  color: black;
+  text-shadow: 2px 2px #00FFFF;
+}

@@ -1,12 +1,15 @@
-
+<h1>All the question our site has to offer</h1>
+<hr />
 
 {{#each model as |question|}}
-{{#link-to 'question' question.id}}<li>Question: {{question.question}}</li>{{/link-to}}
-<li>Author: {{question.author}}</li>
-<li>Date Posted: {{question.date}}</li>
+<div class = "question">
+{{#link-to 'question' question.id}}<p>Question: {{question.question}}</p>{{/link-to}}
+</div>
+<h2>By: {{question.author}}</h2>
+<p>Date Posted: {{question.date}}</p>
 <p>Update Your Questions: {{update-question question=question updateQuestion="updateQuestion"}} </p>
 
-<button {{action 'deleteQuestion' question}}>Delete Question</button>
+<button class = "btn btn-danger" {{action 'deleteQuestion' question}}>Delete Question</button>
 <p>//////////////////////////////////////////</p>
 
 {{/each}}
