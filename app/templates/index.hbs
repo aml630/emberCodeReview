@@ -1,8 +1,10 @@
 
 
 {{#each model as |question|}}
-<li>{{question.question}}</li>
-<li>{{question.author}}</li>
+{{#link-to 'question' question.id}}<li>Question: {{question.question}}</li>{{/link-to}}
+<li>Author: {{question.author}}</li>
+<li>Date Posted: {{question.date}}</li>
+
 <hr />
 
 {{/each}}

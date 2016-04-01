@@ -1,0 +1,11 @@
+<h1>Individual Question Page</h1>
+
+<h2>Question: {{model.question}}</h2>
+<h3>Author: {{model.author}}</h3>
+<li>Date Posted: {{model.date}}</li>
+
+  <form >
+    {{input value=answer id="answer" placeholder = "Answer IT!"}}
+    {{input value=author id="author" placeholder = "my name is this"}}
+    <button {{action 'saveAnswer'}}>Save</button>
+  </form>
